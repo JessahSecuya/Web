@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    font-family: 'Courier New', monospace;
+    background-color: white;
+}
+/* CREATE GRID */
+main{
+     display: grid;
+     height: 100%;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: 0.2fr 0.2fr 0.8fr 1.8fr 0.13fr;
+     grid-template-areas:
+        "nav nav nav nav"
+        "cont1 cont1 cont1 cont1"
+        "cont2 cont2 cont2 cont2"
+        "cont3 cont3 cont3 cont3"
+        "footer footer footer footer";
+}
+
+/* NAV BAR AREA DESIGN */
+nav{
+    background-color: #81b29a;
+    grid-area: nav;
+    padding-top: 25px;
+}
+nav img{
+    width: 50px;
+    background-position: top 10px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.logoname{
+    background-color: #303030;
+    padding: 2.1em;
+    margin: 0;
+}
+.logo{
+    font-size: 20px;
+    margin-left: 3rem;
+    transition: all 0.3s ease;
+}
+.about{
+    border-bottom: 3px solid #ffb703;
+}
+nav span{
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+nav span a{
+    color: white;
+}
+nav span:hover{
+    border-bottom: 3px solid #ffb703;
+}
+
+/* CONTENT1 AREA DESIGN */
+#cont1{
+    grid-area: cont1;
+    padding: 2rem;
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+}
+#cont1 span{
+    font-size: 25px;
+}
+
+/* CONTENT2 AREA DESIGN */
+#cont2{
+    background-image: url(../pictures/logo01.png);
+    grid-area: cont2;
+    border-top: 1px solid rgba(225, 225, 225, 0.1);
+    background-repeat: no-repeat;
+    background-size: 270px;
+    background-position: top 5px left 130px;
+}
+#cont2 h1{
+    text-align: right;
+    font-size: 170px;
+    padding-top: 0.35em;
+}
+
+/* CONTENT3 AREA DESIGN */
+#cont3{
+    background-color: #252422;
+    grid-area: cont3;
+}
+#cont3 h2{
+    text-align: center;
+    padding-top: 1.5em;
+    color: azure;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.container div{
+    padding: 20px 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0 0 15px rgba(0, 180, 216, 2);
+}
+.container div p{
+    text-align: justify;
+}
+#cont3 h3{
+    text-align: center;
+    padding-top: 1.5em;
+    color: azure;
+}
+#cont3 ul{
+    background-color: #efefef;
+    border-radius: 10px;
+    margin: 40px 40px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 2);
+    list-style: none;
+}
+#cont3 ul li{
+    padding-left: 20%;
+    line-height: 35px;
+}
+#cont3 ul li:before{
+    content: "► ";
+}
+#cont3 h4{
+    text-align: center;
+    padding: 1.5em 0;
+    color: azure;
+    font-size: 20px;
+}
+
+/* FOOTER AREA DESIGN */
+footer{
+    background-color: #81b29a;
+    grid-area: footer;
+    padding: 1rem;
+    text-align: center;
+    bottom: 0;
+}
