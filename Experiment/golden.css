@@ -1,0 +1,7 @@
+.golden{
+    background: #403d39;
+}
+main section{
+    background-color: rgba(205, 180, 219, 1);
+    transition: 1s;
+}
